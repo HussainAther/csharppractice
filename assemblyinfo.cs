@@ -27,3 +27,8 @@ private void Awake () {
 				CreateVoxel(i, x, y);
 			}
 		}
+
+[SelectionBase]
+public class VoxelGrid : MonoBehaviour {
+	…
+}
