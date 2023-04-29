@@ -25,3 +25,18 @@ public class MatrixSpiral
         int stepsCount = 1;
         int stepPosition = 0;
         int stepChange = 0; 
+        
+        for (int i = 0; i < n * n; i++)
+        {
+            matrix[positionY, positionX] = i;
+            if (stepPosition < stepsCount)
+            {
+                stepPosition++;
+            }
+            else
+            {
+                stepPosition =1;
+                if (stepChange == 1)
+                {
+                    stepsCount++;
+                }
