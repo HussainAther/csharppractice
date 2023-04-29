@@ -40,3 +40,36 @@ public class MatrixSpiral
                 {
                     stepsCount++;
                 }
+            stepChange = (stepChange + 1) % 2;
+            direction = (direction + 1) % 4;
+         }
+
+        switch (direction)
+        {
+            case 0:
+                positionY++;
+                break;
+            case 1:
+                positionX--;
+                break;
+            case 2:
+                positionY--;
+                break;
+            case 3:
+                positionX++;
+                break;
+        }
+    }
+}
+
+privatestaticvoidPrintMatrix(int[,] matrix, intn)
+{
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            Console.Write("{0,3}", matrix[i, j]);
+        }
+        Console.WriteLine();
+    }
+}
