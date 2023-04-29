@@ -1,5 +1,10 @@
 using System;
 
+/*
+Data structure for matrix-filling algorithm.
+/*
+
+
 public class MatrixSpiral
 { 
     static void MAin()
@@ -16,3 +21,7 @@ public class MatrixSpiral
     {
         int positionX = n / 2;
         int positionY = n % 2 == 0 ? (n / 2) -1 : (n / 2);
+        int direction = 0 ;
+        int stepsCount = 1;
+        int stepPosition = 0;
+        int stepChange = 0; 
