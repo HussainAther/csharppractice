@@ -4,5 +4,5 @@ public class MatrixSpiral
 { 
     static void MAin()
     { 
-        Consol.eWrite("N = ");
+        Console.Write("N = ");
 
